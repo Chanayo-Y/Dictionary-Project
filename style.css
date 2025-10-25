@@ -1,0 +1,271 @@
+/* ========== Global Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;/*if first font won't work in web it goes to the next font*/
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a; 
+  line-height: 1.6; /*adding space between lines*/
+}
+
+/* ========== Header ========== */
+header {
+  background-color: #00796b; /* Teal */
+  color: white;
+  padding: 10px 20px; /*top-bottom 10px, left-right 20px*/
+  text-align: left;
+  font-size: 1.4rem; /* increase the default browse site 16px*/
+  font-weight: bold;
+  border-bottom: 4px solid #004d40;
+}
+
+/* ========== Main Content ========== */
+main {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about {
+  display: flex; /*to easily position the image*/
+  align-items: center;
+  justify-content: space-between; /*space between text and image*/
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  border-left: 6px solid #009688;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1; /*Take up leftover space in the flexbox*/
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.about-text h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #00b8b8;
+}
+
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 400px;/*limit max width*/
+    margin-top: 20px;
+  }
+}
+
+
+/* ========== Reason Section ========== */
+.reason-container {
+  background-color: #f9f9f9;
+  border-left: 6px solid #009688;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 31, 63, 0.1);
+  text-align: left;
+}
+
+.reason-container h2 {
+  color: #00796b;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.reason-container p {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ========== Team Section ========== */
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+section h2 {
+  color: #00796b;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+section p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* ========== members ========== */
+.resume-card {
+  display: inline-block; /*align cards horizontally*/
+  width: 250px;
+  height: 370px;
+  vertical-align: top; /*align to the top*/
+  background-color: #009688;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.resume-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+}
+
+.resume-info h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.resume-info h4 {
+  color: #e0f2f1;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.resume-section strong {
+  color: #fff;
+}
+
+.resume-section p {
+  color: #f1f1f1;
+  text-align: justify;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* ========== Project Link Button ========== */
+.project-link {
+  margin: 30px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+/* ========== Footer ========== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00796b;
+  border-top: 4px solid #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  color: #b2dfdb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* ========== app.html ========== */
+.app-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.search-box {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #00796b;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-box button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;/*smooth hover effect*/
+}
+
+.search-box button:hover {
+  background-color: #004d40;
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f7f9fc;
+  border-radius: 10px;
+  border: 1px solid #cfd8e3;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.result-box h3 {
+  color: #001f3f;
+}
+
+.result-box p {
+  color: #333;
+  margin: 5px 0;/*space between paragraphs*/
+}
